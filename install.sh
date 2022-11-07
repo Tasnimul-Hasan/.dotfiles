@@ -1,7 +1,9 @@
 #!/bin/sh
 
 cp scripts ~/scripts -r
-cat .bashrc > ~/.bashrc
+cat scripts/main.sh > ~/.bashrc
+echo >> ~/.bashrc
+cat scripts/node.sh >> ~/.bashrc
 
 gh alias set list 'repo list'
 gh alias set edit 'repo edit'

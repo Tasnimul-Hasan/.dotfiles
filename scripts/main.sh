@@ -18,10 +18,6 @@ __bash_prompt() {
 }
 __bash_prompt
 
-if [ `nvm current` == system ]; then
-  source ~/scripts/install-node.sh
-fi
-
 alias y="yarn"
 alias ni="touch"
 alias md="mkdir"
