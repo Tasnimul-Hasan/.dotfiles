@@ -19,8 +19,7 @@ __bash_prompt() {
 __bash_prompt
 
 if [ `nvm current` == system ]; then
-  echo 'Installing node...'
-  source scripts/install-node.sh
+  source ~/scripts/install-node.sh
 fi
 
 alias y="yarn"
