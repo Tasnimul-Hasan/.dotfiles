@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cp scripts > ~/scripts -r
+cp scripts ~/scripts -r
 cat .bashrc > ~/.bashrc
 
 gh alias set list 'repo list'
