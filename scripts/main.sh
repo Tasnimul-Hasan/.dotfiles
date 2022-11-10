@@ -22,9 +22,9 @@ alias y="yarn"
 alias ni="touch"
 alias md="mkdir"
 alias cls="clear"
-alias ghc="gh repo clone"
+alias clone="gh repo clone"
 
-ghp() {
+push() {
   local msg="$1"
   if [ -z "$msg" ]; then
     read -p 'Commit Message: ' inputMsg

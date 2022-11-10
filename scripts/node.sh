@@ -10,5 +10,5 @@ if [ `nvm current` == system ]; then
     
   echo 'Installing global npm packages...'
   npm i -g npm@latest
-  npm i -g live-server gitignore
+  npm i -g live-server gitignore nodemon
 fi
