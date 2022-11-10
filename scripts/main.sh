@@ -30,8 +30,8 @@ ghp() {
     read -p 'Commit Message: ' inputMsg
 
     if [ -z "$inputMsg" ]; then
-      time=$(date +%H:%m:%S)
-      msg="Commited at $time"
+      msg=$(git status --short)
+      echo $msg
     else
       msg=$inputMsg
     fi
