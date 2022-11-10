@@ -27,10 +27,11 @@ alias ghc="gh repo clone"
 ghp() {
   local msg="$1"
   if [ -z "$msg" ]; then
-    read -p '#: ' inputMsg
+    read -p 'Commit Message: ' inputMsg
 
     if [ -z "$inputMsg" ]; then
-      msg="..."
+      time=$(date +%H:%m:%S)
+      msg="Commited at $time"
     else
       msg=$inputMsg
     fi
